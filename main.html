@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript" language="javascript"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="CSS/bootstrap/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.1/animate.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    <style type="text/css">
+        * {
+            font-size: 15px;
+            font-weight: bold;
+            color: rgb(0, 0, 0)
+        }
+
+        .videoback {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-size: cover;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        .csss {
+            position: fixed;
+            height: auto;
+            width: auto;
+            min-width: 100%;
+            min-height: 100%;
+            background: rgba(150, 3, 241);
+            opacity: 0.7;
+        }
+
+        #overlay {
+            position: relative;
+            width: 400px;
+        }
+
+
+        .images {
+            width: 300px;
+            height: 300px;
+            border-radius: 20%;
+            display: block;
+            transition: 4s;
+            opacity: 1;
+        }
+
+
+        .wrap {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            opacity: 0;
+            transition: 1s;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+
+        .images:hover {
+            transform: rotate3d(1, 1, 1, 360deg);
+            opacity: 0.5;
+        }
+
+        .img1 {
+            color: black;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-80%, -80%);
+            -ms-transform: translate(-80%, -80%);
+            -o-transform: translate(-80%, -80%);
+            -moz-transform: translate(-80%, -80%);
+            transform: translate(-80%, -80%);
+            text-align: center;
+
+        }
+
+        #CNAForm {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0px 0px 3px rgb(243, 6, 6);
+        }
+
+        #aboutusdiv {
+            margin-top: 80px;
+            background-color: lightblue;
+            background: rgba(159, 159, 217, 0.5);
+        }
+
+        i.fa,
+        b {
+            color: rgb(21, 4, 252);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <nav class="navbar-fixed-top">
+                <ul class="nav nav-tabs ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about_us">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#corse">corse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#CNAForm">form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://silveroakuni.ac.in/">sou web page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://goo.gl/maps/j88nCBYQ82VrGxPs9">location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://youtube.com/c/SilverOakUni">youtube</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://instagram.com/silveroakuni?igshid=YmMyMTA2M2Y=">instagram</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/SilverOakUni/">facebook</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="videoback">
+        <video autoplay loop class="csss">
+            <source src="11.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+    </div>
+   
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 offset-sm-2 col-sm-8 offset-md-3 col-md-6 offset-lg-3 col-lg-6 WOW heartBeat"
+                    data-wow-duration="5s" id="aboutusdiv">
+                    <hr>
+                    <h1>SILVER OAK UNIVERSITY</h1>
+                    <hr>
+                    <p>The Silver Oak University is a premier university of the country with a venerable legacy from
+                        Silver Oak
+                        Group of
+                        Institutes with acclaim for highest academic standards, diverse educational programmes,
+                        distinguished
+                        faculty,
+                        illustrious alumni, varied cocurricular activities and modern infrastructure.
+                        Over eleven years of its existence as Silver Oak Group of Institutes, the group has sustained
+                        the highest
+                        global
+                        standards and best practices in education. Its long-term commitment to nation building and
+                        unflinching
+                        adherence
+                        to universal human values are reflected in its motto: “Gyanam Param Bhushanam” and “Education to
+                        Innovation”.
+                        Established in 2009 as an affiliated college today State government has accorded it with the
+                        status of a
+                        State
+                        Private University (under Gujarat Private Universities Act, 2009). A strong commitment to
+                        excellence in
+                        teaching,
+                        research and social outreach has made the University a role-model and trend setter for other
+                        Institutes and
+                        Universities. Beginning with 240 students, it has grown as one of the largest engineering
+                        campuses with more
+                        than
+                        7000 students just in span of a little more than a decade.
+                    </p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2></h2>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open
+                Modal</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h3>Do you have any Questions?</h3>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container" data-wow-duration="3s" id="corse">
+            <div class="row">
+                <div class="col-sm-4 WOW heartBeat">
+                    <hr>
+                    <h2>B.C.A</h2>
+                    <hr>
+                    <p>BCA (Bachelor of Computer Application) is 3 years (6 semesters) full time program run by Silver
+                        Oak
+                        University. It is a professional undergraduate program which focuses mainly on computer
+                        application
+                        concepts.
+                        The Course is designed to guide the student from basic concepts to train them up to the recent
+                        advance
+                        technological practices in the industries. Imparting the latest required technical skill set
+                        through
+                        hands-on
+                        in the Hi-tech IT laboratories experiences is emphasized at every stage of the program and
+                        brings
+                        awareness to
+                        the future prospects in the modern IT world.</p>
+                    <p>Eligibility Criteria
+                        <br> pass in any stream of GSEB, CBSC or equivalent.
+                        <br>Total Intake
+                        <br> 60
+                        <br>Program Outcomes (PO) for BCA
+                        <br>PO1:Knowledge: Apply the fundamental knowledge of information technology along with
+                        analytical,
+                        problem-solving and designing. Also to provide communication skill for life-long learning in
+                        chosen
+                        field.
+                        <br>PO2: Complex Computing Problems: Ability to develop and conduct experiments, interpret data
+                        and
+                        provide
+                        well informed conclusions.
+                        <br>PO3: Core Competence: Ability and competence to work as an IT professional upon graduation.
+                    </p>
+                    <hr>
+                </div>
+                <div class="col-sm-4">
+                    <hr>
+                    <h2>M.C.A</h2>
+                    <hr>
+                    <p>The Master of Computer Applications (MCA) at Silver Oak University is a 2-year duration
+                        professional
+                        post-graduate programme for candidates wanting to delve deeper into the world of computer
+                        application
+                        development with the help of learning modern programming language. The eligibility criteria for
+                        this
+                        course is
+                        a bachelor's degree in computer application (BCA) or in any related field. The programme is a
+                        blend
+                        of both
+                        theoretical and practical knowledge. An MCA degree endows students' an opportunity to work with
+                        tools meant to
+                        develop better and faster applications</p>
+                    <p>There is no dearth of lucrative job opportunities for MCA graduates. A candidate with a master's
+                        degree in
+                        computer applications along with the right amount of relevant work experience, skill set and
+                        calibre
+                        can
+                        easily find great job opportunities at leading IT firms (both private and government) across
+                        India
+                        and abroad.
+                        It is a better choice for candidates having an MCA degree to grow their career in the IT sector.
+                        Candidates
+                        may get great employment options with top IT companies and MNCs. The MCA graduates salary and
+                        job
+                        opportunities are high when compared with other areas of study.</p>
+                    <p>Some of the top job profiles for MCA graduates are: App Developer, Business Analyst, Database
+                        Engineer,
+                        Ethical Hacker, Hardware Engineer, Manual Tester, Technical Writers, Trouble-shooters, Social
+                        Media
+                        Handler,
+                        Web Designer/Developer and the like.</p>
+                    <hr>
+                </div>
+                <div class="col-sm-4">
+                    <hr>
+                    <h2>D.C.A</h2>
+                    <hr>
+                    <p>The DCA (Diploma in Computer Application) is is a 3 year course program in computer application
+                        and
+                        students
+                        try to pursue courses that are in high demand in the market. There are several career and job
+                        opportunities
+                        through this diploma course.
+                        <BR>Eligibility Criteria
+                        <br> pass in any stream of GSEB, CBSC or equivalent.
+                    </p>
+                    <p>Various skills are inculcated in the computer programmer through DCA and enhance their thinking
+                        ability are:
+                        <BR>Students will get exposure to the IT sector through a computer application.
+                        <br> duration of the diploma course is of 3 years, fulfilling all the needs of a knowledgeable
+                        programmer.
+                        <bR>Concepts are being cleared in depth by the faculty of a particular institution.
+                    </p>
+                    <hr>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <br>
+                <hr>
+                <br>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="events">
+            <div class="rows">
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+                    <img src="silveroakuni-16052022-0001.jpg" alt="image1" class="images">
+                    <span class="img1">Bus</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 ">
+                    <img src="silveroakuni-16052022-0002.jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+                    <img src="silveroakuni-16052022-0003.jpg" alt="image1" class="images">
+                    <span class="img1">Bus</span>
+
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 ">
+                    <img src="silveroakuni-16052022-0004.jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+                    <img src="silveroakuni-16052022-0005.jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+                    <img src="silveroakuni-16052022-0006.jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 ">
+                    <img src="silveroakuni-16052022-0007.jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 ">
+                    <img src="silveroakuni-16052022-0008.jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 ">
+                    <img src="silveroakuni-16052022-0009.jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4 WOW slideInDown"
+                    id="CNAForm">
+                    <h3 class="text-center"><i class="fa fa-users"></i> Create New Account
+                        <hr />
+                    </h3>
+                    <div class="form-group">
+                        <b>Firstname:</b>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input id="TxtFirstname" type="text" maxlength="20" placeholder="Enter firstname here.."
+                                class="form-control" />
+                        </div>
+                        <small id="TxtFirstnameValidate" class="text-danger"></small>
+                    </div>
+                    <div class="form-group">
+                        <b>Lastname:</b>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input id="TxtLastname" type="text" maxlength="20" placeholder="Enter lastname here.."
+                                class="form-control" />
+                        </div>
+                        <small id="TxtLastnameValidate" class="text-danger"></small>
+                    </div>
+                    <div class="form-group">
+                        <b><i class="fa fa-phone"></i> Contact No:</b>
+                        <div class="input-group">
+                            <span class="input-group-addon">+91</span>
+                            <input id="TxtContactNo" type="text" maxlength="10" placeholder="Enter contact no. here.."
+                                class="form-control" />
+                        </div>
+                        <small id="TxtContactNoValidate" class="text-danger"></small>
+                    </div>
+                    <div class="form-group">
+                        <b>Gender:</b>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-female"></i> | <i
+                                    class="fa fa-male"></i></span>
+                            <select class="form-control" id="DDL_Gender">
+                                <option value="F">Female</option>
+                                <option value="M">Male</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <b>Email Id:</b>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                            <input id="TxtEmailId" type="text" maxlength="50" placeholder="Enter email id here.."
+                                class="form-control" />
+                        </div>
+                        <small id="TxtEmailIdValidate" class="text-danger"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <a id="BtnCreateNewAccount" class="btn btn-primary"><i class="fa fa-user-plus"
+                                style="color:#ffffff;"></i>
+                            apply now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="events">
+            <div class="rows">
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+                    <img src="1-(1).jpg" alt="image1" class="images">
+                    <span class="img1">Bus</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 ">
+                    <img src="1-(2).jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+                    <img src="1-(3).jpg" alt="image1" class="images">
+                    <span class="img1">Bus</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 ">
+                    <img src="1-(4).jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+                    <img src="1-(5).jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+                    <img src="1-(7).jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 ">
+                    <img src="1-(8).jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 ">
+                    <img src="1-(10).jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 ">
+                    <img src="1-(11).jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 ">
+                    <img src="1-(13).jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 ">
+                    <img src="1-(14).jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 ">
+                    <img src="1-(15).jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 ">
+                    <img src="1-(16).jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 ">
+                    <img src="1-(17).jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 ">
+                    <img src="1-(18).jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 ">
+                    <img src="1-(19).jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 ">
+                    <img src="1-(20).jpg" alt="image2" class="images">
+                    <span class="img1">Opening</span>
+                </div>
+
+            </div>
+            <h1 class="WOW slideInDown" style="text-align: center;">Thank you</h1>
+        </div>
+</body>
+
+</html>
